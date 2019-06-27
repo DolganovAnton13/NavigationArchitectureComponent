@@ -24,15 +24,12 @@ public class Fragment3 extends Fragment {
     public Fragment3() {
         // Required empty public constructor
     }
-
-
+    
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_fragment3, container, false);
         navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment);
-
-
 
         button = (Button) view.findViewById(R.id.buttonFragment3Back);
         button.setOnClickListener(new View.OnClickListener() {
